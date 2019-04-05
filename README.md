@@ -12,6 +12,6 @@ This application is being created for K3G Music Enterprises, it is a new music s
 # Summary
 
 In order to analyse and run this web application on local host please consider the following steps:
-1. Clone the repository and run the code for Web app in cmd by the command--> python api.py
-This will fetch the preparepickle.ipynb from backend and will process the request by creating the pickel objects.
-2. You will receive a port on which the app is running, Copy the port and give the file location as /api --> localhost:portnumber/api
+1. Run the preparepickle.ipynb file on jupyter.This notebook will create required pickle objects for classifying the mood of the lyrics
+2. After creating the pickle objects run the Web app on command promt using command --> python api.py
+3. You will receive a port on which the app is running, open the browser and go to url: localhost:https://localhost:portnumber/api to access the web page.
