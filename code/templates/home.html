@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title style="text-align:center;">Lab1</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+</head>
+<body style="background-color:black;text-align:center;">
+    <div class="container">
+  <div style="background:#f4424b !important" class="jumbotron">
+    <h1>
+	
+	<font color="black">K3G Song Classifier</font></h1>     
+    <h3><font color="black">Start Predicting the Mood of Your Hindi Songs <i class="em em-anguished"></i>
+														<i class="em em-blush"></i>
+														<i class="em em-expressionless"></i>
+														<i class="em em-grinning"></i>
+														<i class="em em-slightly_frowning_face"></i>
+														<i class="em em-slightly_smiling_face"></i>
+														<i class="em em-triumph"></i>
+														<i class="em em-zany_face"></font></i></h3>
+  </div>      
+</div>
+<h4> <font color="white">	Enter lyrics here<i class="em em-arrow_down_small"></font></i></h4>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form action="/api/lyrics" method="POST">
+	<dl>{{ render_field(form.lyrics, cols='30', rows='10') }} </dl>
+	<div><font color="white"><input style="background-color:black" type="submit" value="Find Song Mood" ></font> </div>
+	
+</form>
+<font color="white">
+<p>{{y}}</p>	
+
+<p> {{probability}}</p>
+<br>
+</font>
+</body>
+</html>
