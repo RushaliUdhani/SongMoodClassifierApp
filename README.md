@@ -8,6 +8,7 @@ This application is being created for K3G Music Enterprises, it is a new music s
 
 [Web Application](https://song-mood-pred-app.herokuapp.com/api)
 [Summary Report]()
+[Run the app locally](https://youtu.be/LRMoRKkJjfk)
 
 # Summary
 
